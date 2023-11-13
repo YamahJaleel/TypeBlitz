@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/kJV3yFjaVYtlP0CMOR/giphy.gif" width="300"/>
+  <img src="https://media.giphy.com/media/kJV3yFjaVYtlP0CMOR/giphy.gif" width="500"/>
 </div>
 
-> TypeBlitz
+# TypeBlitz
 
 TypeBlitz is a fast-paced typing game designed to test and improve your typing speed and accuracy. Challenge yourself to type a series of words as quickly and accurately as possible within a set time limit. Sharpen your typing skills and see how you stack up against the clock!
 
