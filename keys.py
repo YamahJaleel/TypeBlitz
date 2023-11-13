@@ -1,22 +1,33 @@
 import words
 import random
+import os
 
 word_list = words.generate_random_words(5)
+length_words = len(word_list)
+count = 0  # Initialize count outside the function
+centered_arrow = "=>".center(-40)
 
 def check_user_input():
-    #print([word.split() for word in word_list])
-    random_word = word_list[random.randint(0,len(word_list) - 1)]
-    print(random_word)
-    user_input = input("Type " + random_word + ": " )
+    global count, score  # Declare count and score as global variables
+    if count <= length_words - 1:
+        random_word = word_list[count]
+        print("**************************************")
+        if os.name == 'nt':
+            os.system('cls')
+        print("******************************************")
+        print(f"{random_word.center(40)}")
+        print("******************************************")
+        user_input = input(centered_arrow)
+        print("**************************************")
+        for word in word_list:
+            if user_input.lower() == word.lower():
+                count += 1
+                return True
+        print("Incorrect! Try again.")
+        return True
+    else:
+        print("Thank you for typing!!!")
+        return False
 
-    for word in word_list:
-        if user_input.lower() == word.lower():
-            print("Correct! You typed a word correctly.")
-            word_list.remove(random_word)
-            return True
-
-    print("Incorrect! Try again.")
-    return False
-
-while True:
-    check_user_input()
+while check_user_input():
+    continue
