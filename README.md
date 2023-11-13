@@ -34,6 +34,8 @@ python typeblitz.py
 
 > Acknowledgments
 
-TypeBlitz is inspired by typing games that aim to enhance users' typing proficiency. Special thanks to the open-source community for their valuable contributions.
+TypeBlitz is inspired by typing games that aim to enhance users' typing proficiency. 
+
+Special thanks to the open-source community for their valuable contributions.
 
 Enjoy improving your typing skills with TypeBlitz!
