@@ -4,7 +4,7 @@
 
 # TypeBlitz
 
-TypeBlitz is a fast-paced typing game designed to test and improve your typing speed and accuracy. Challenge yourself to type a series of words as quickly and accurately as possible within a set time limit. Sharpen your typing skills and see how you stack up against the clock!
+TypeBlitz is a fast-paced typing program designed to test and improve your typing speed and accuracy. Challenge yourself to type a series of words as quickly and accurately as possible within a set time limit. Sharpen your typing skills and see how you stack up against the clock!
 
 Word Challenges: Type a series of randomly generated words to improve your typing speed.
 
