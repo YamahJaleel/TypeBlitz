@@ -1,30 +1,29 @@
-import words
 import os
+import words
 
-word_list = words.generate_random_words(10)
-length_words = len(word_list)
-count = 0  # Initialize count outside the function
-centered_arrow = "=>".center(-40)
+word_list = words.generate_random_words(10)                             # Generate a list of 10 random words
+length_words = len(word_list)                                           # Declare a variable to keep track of length of words generated
+count = 0                                                               # Initialize count
+centered_arrow = "=>".center(-40)                                       # Center arrow for user input
 
 def check_user_input():
-    global count, score  # Declare count and score as global variables
-    if count <= length_words - 1:
-        random_word = word_list[count]
+    global count, score                                                 # Declare count as global variables
+    if count <= length_words - 1:                                       # Check if list of words has not finished
+        word = word_list[count]                                         # Choose a word from the list of words (First word will be at index 0 of the list) 
         print("**************************************")
         if os.name == 'nt':
-            os.system('cls')
+            os.system('cls')                                            # Clear terminal to keep interface clean
         print("******************************************")
-        print(f"{random_word.center(40)}")
+        print(f"{word.center(40)}")                                     
         print("******************************************")
-        user_input = input(centered_arrow)
+        user_input = input(centered_arrow)                              # Request user input
         print("**************************************")
-        for word in word_list:
-            if user_input.lower() == word.lower():
-                count += 1
-                return True
-        print("Incorrect! Try again.")
+        word_lower = user_input.lower()                                 # Convert user input into a string containing only lowercase
+        if word_lower in word_list:                                     # Check if users input is in word_list
+            count += 1                                                  # If it is move onto the next word
+            return True                                                 
+        print("Incorrect! Try again.")                                 # If not then index will stay the same and word as well, reprompt user for same word
         return True
     else:
-        print("Thank you for typing!!!")
+        print("Thank you for typing!!!")                               # When we finish through the whole list of words print thank you message
         return False
-
