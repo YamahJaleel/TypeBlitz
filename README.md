@@ -20,9 +20,9 @@ Launch the TypeBlitz application.
 
 Type the displayed words as quickly and accurately as you can.
 
-The game ends when the time runs out.
+The game ends when the amount of words runs out.
 
-View your final score and track your progress over time.
+Track your progress over time.
 
 > Installation:
 
