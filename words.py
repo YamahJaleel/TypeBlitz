@@ -1,6 +1,7 @@
 import os
 import random
 
+# Generate random list of Words to be used from the Words.txt 
 def generate_random_words(n):
     os.chdir(r'C:\Users\Jalee\Code\Python\TypeBlitz')                   # Change current OS directory to wherever the Words.txt file is located
     list_words = []                                                     # Initialize list of words 
