@@ -1,20 +1,42 @@
 import os
+import time
 import type
 
 if __name__ == "__main__":
     
-    if os.name == 'nt':
-        os.system('cls')  
+    #Clear the Terminal depending on the Operating System
+    os.system('cls' if os.name == 'nt' else 'clear')  
+
+    # Define intro text (which are lines) to be printed
+    lines = [
+        "*" * 65,
+        "*          💻          Welcome to TypeBlitz !        💻         *",
+        "*               Your mission is clearly defined                 *",
+        "*     Type the word displayed on the screen and press ENTER     *",
+        "* If you get it wrong, brace yourself for a relentless reprompt *",
+        "*" * 65,
+        ""
+    ]
+
+    # Print string with a delay
+    def print_with_delay(text, delay=0.025):
+        for char in text:
+            print(char, end='', flush=True)
+            time.sleep(delay)
+
+    # Print input string with delay
+    def input_with_delay(prompt, delay=0.01):
+        print_with_delay(prompt, delay)
+        user_input = input()
+        return user_input   
     
-    print("*" * 65)
-    print("*                    Welcome to TypeBlitz !                     *")
-    print("*               Your mission is clearly defined                 *")
-    print("*     Type the word displayed on the screen and press ENTER     *")
-    print("* If you get it wrong, brace yourself for a relentless reprompt *")
-    print("*" * 65)
-    print("")
+    # Print each line with a delay
+    for line in lines:
+        print("\n")
+        print_with_delay(line)
 
-    num_words_to_generate = input("Enter how many words to type: ")
-    user_input = input("Press ENTER if you are ready ")
+    #Ask User for how many words to generate, Check if integer if not reprompt
+    num_words_to_generate = int(input_with_delay("Enter how many words to type: "))
 
+    # Instantiate the type_blitz object within the type class
     type.type_blitz(int(num_words_to_generate))                            
