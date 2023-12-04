@@ -25,7 +25,7 @@ if __name__ == "__main__":
             time.sleep(delay)
 
     # Print input string with delay
-    def input_with_delay(prompt, delay=0.01):
+    def input_with_delay(prompt, delay=0.025):
         print_with_delay(prompt, delay)
         user_input = input()
         return user_input   
