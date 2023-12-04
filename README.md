@@ -3,6 +3,7 @@
 </div>
 
 # TypeBlitz
+
 >  DESCRIPTION
 
 TypeBlitz is a fast-paced typing program designed to test and improve your typing speed and accuracy. Challenge yourself to type a series of words as quickly and accurately as possible within a set time limit. Sharpen your typing skills and see how you stack up against the clock!
@@ -23,8 +24,6 @@ Feedback: Instant feedback on your accuracy and speed after each round.
      ( It should look something like this 'C:\Users\Jalee\Code\Python\TypeBlitz' )
   4. Run this command -> python typeblitz.py
 
-     
-  
 > HOW TO PLAY
 
 Launch the TypeBlitz application.
