@@ -1,5 +1,6 @@
 import os
 import words
+import time
 
 def type_blitz(num_words):
     word_list = words.generate_random_words(num_words)      # Generate a list of random words
@@ -7,13 +8,21 @@ def type_blitz(num_words):
     count = 0                                               # Initialize count
     arrow = "=>"
 
+    # Print Separator
     def print_separator():
         print("*" * 40)
 
-    def clear_terminal():
-        if os.name == 'nt':
-            os.system('cls')                                # Clear terminal on Windows (if os is mac or linux must update this line of code accordingly)
+    # Print string with a delay
+    def print_with_delay(text, delay=0.025):
+        for char in text:
+            print(char, end='', flush=True)
+            time.sleep(delay)
 
+    # Clear the Terminal depending on operating system
+    def clear_terminal():
+        os.system('cls' if os.name == 'nt' else 'clear')    
+
+    # Prompt User to input a word and check if input is correct
     def type_blitz_prompt():
         nonlocal count                                      # Use nonlocal to modify the count variable in the outer function
         if count < length_words:                            # Check if list of words has not finished
@@ -33,10 +42,11 @@ def type_blitz(num_words):
             return True
         else:
             clear_terminal()
-            print_separator()
-            print("*        Thank you for typing!!!       *")                # Finish through the whole list of words
-            print_separator()
+            print_with_delay("*" * 45)
+            print_with_delay("\n*    🫡    Thank you for typing!!!    🫡    *")                # Finish through the whole list of words
+            print_with_delay("\n" + "*" * 45)
             return False
 
+    # Keep prompting until the user finishes or exits
     while type_blitz_prompt():
-        pass                                                # Keep prompting until the user finishes or exits
+        pass                                                 
