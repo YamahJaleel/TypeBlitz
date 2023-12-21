@@ -45,6 +45,8 @@ def type_blitz(num_words):
             print_with_delay("*" * 45)
             print_with_delay("\n*    🫡    Thank you for typing!!!    🫡    *")                # Finish through the whole list of words
             print_with_delay("\n" + "*" * 45)
+            time.sleep(3)
+            clear_terminal()
             return False
 
     # Keep prompting until the user finishes or exits

@@ -4,10 +4,10 @@ import type
 
 if __name__ == "__main__":
     
-    #Clear the Terminal depending on the Operating System
+    #Clear the Terminal 
     os.system('cls' if os.name == 'nt' else 'clear')  
 
-    # Define intro text (which are lines) to be printed
+    # Initalize intro text to be printed
     lines = [
         "*" * 65,
         "*          💻          Welcome to TypeBlitz !        💻         *",
@@ -30,12 +30,12 @@ if __name__ == "__main__":
         user_input = input()
         return user_input   
     
-    # Print each line with a delay
+    # Print intro text with a delay
     for line in lines:
         print("\n")
         print_with_delay(line)
 
-    #Ask User for how many words to generate, Check if integer if not reprompt
+    #Ask User for how many words to generate
     num_words_to_generate = int(input_with_delay("Enter how many words to type: "))
 
     # Instantiate the type_blitz object within the type class
