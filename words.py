@@ -3,7 +3,7 @@ import random
 
 # Generate random list of Words to be used from the Words.txt 
 def generate_random_words(n):
-    os.chdir(r'C:\Users\Jalee\Code\Python\TypeBlitz')                   # Change current OS directory to wherever the Words.txt file is located
+    os.chdir(r'C:\Users\Jalee\Code\Python\GitHub\TypeBlitz')            # Change current OS directory to wherever the Words.txt file is located
     list_words = []                                                     # Initialize list of words 
     file = open('Words.txt')                                            # Open the Words.txt file for reading words
     list_words = [word.strip().lower() for word in file]                # Iterate through each word in the Words.txt file and store in list of words 
