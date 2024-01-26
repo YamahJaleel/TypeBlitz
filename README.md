@@ -4,7 +4,7 @@
 
 # TypeBlitz
 
->  DESCRIPTION
+## Description
 
 TypeBlitz is a fast-paced typing program designed to test and improve your typing speed and accuracy. Challenge yourself to type a series of words as quickly and accurately as possible within a set time limit. Sharpen your typing skills and see how you stack up against the clock!
 
@@ -16,7 +16,7 @@ User-Friendly Interface: A clean and simple interface for an enjoyable typing ex
 
 Feedback: Instant feedback on your accuracy and speed after each round.
 
->  INSTALLATION AND SETUP
+## Installation and Setup
   1. Open Terminal, navigate to where you want to download the program files
   2. Run this command -> git clone https://github.com/YamahJaleel/TypeBlitz.git
   3. Inside words.py -> In line 6, change the current directory to wherever the words.txt file is located in
@@ -24,7 +24,7 @@ Feedback: Instant feedback on your accuracy and speed after each round.
      ( It should look something like this 'C:\Users\Jalee\Code\Python\TypeBlitz' )
   4. Run this command -> python typeblitz.py
 
-> HOW TO PLAY
+## How to play
 
 Launch the TypeBlitz application.
 
@@ -34,7 +34,7 @@ The game ends when the amount of words runs out.
 
 Track your progress over time.
 
-> ACKNOWLEDGMENTS
+## Acknowledgments
 
 TypeBlitz is inspired by typing games that aim to enhance users' typing proficiency. 
 
